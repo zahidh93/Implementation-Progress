@@ -3,7 +3,7 @@
 Team members must manually verify each feature after cloning the project from GitHub before signing off on user stories.
 
 ## 1. Account Registration & Login (ACC-1)
-- [ ] New user can register with a unique email address and hashed password.
+- [ ] New user can register with a unique email address and password.
 - [ ] Duplicate email registration shows a clear error message.
 - [ ] Invalid passwords trigger an error and prevent login.
 - [ ] Successful login redirects the user to the dashboard/store view.
@@ -18,15 +18,11 @@ Team members must manually verify each feature after cloning the project from Gi
 - [ ] Clicking any catalog product opens its dedicated details page.
 - [ ] Product page displays correct name, description, price, and stock status.
 - [ ] Missing images fall back to placeholders with proper accessibility alt text.
-- [ ] Out-of-stock items show an "Out of stock" label and disable the add-to-cart action.
+- [ ] Out-of-stock items show an "Out of stock" label.
 
-## 4. Shopping Cart & Persistence (CART-1)
-- [ ] Users can add products, update quantities, and remove items.
-- [ ] Cart subtotal updates instantly upon quantity changes.
-- [ ] Cart contents persist across page refreshes using browser `localStorage`.
-
-## 5. Checkout & Order Simulation (CART-2 & ORD-1)
-- [ ] Checkout form accepts shipping address, city, postal code, and sample card details.
-- [ ] Client-side validation catches missing or invalid input fields.
-- [ ] Successful simulated payment generates a unique order confirmation number and order summary.
-- [ ] Order-tracking view displays the initial processing state correctly.
+## 4. Manage Products & Stock (ADM-1)
+- [ ] Product and category tables are correctly initialized with sample products.
+- [ ] Admins can add, edit, and hide products in the catalog.
+- [ ] Stock levels can be updated manually and changes appear immediately on customer pages.
+- [ ] System prevents inventory quantities from going below zero.
+- [ ] Products with past orders are hidden rather than deleted.
